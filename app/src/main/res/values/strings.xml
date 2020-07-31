@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MSD</string>
+    <string name="action_settings">Settings</string>
+    <string name="create_data">create_data</string>
+    <string name="delete_data">delete_data</string>
+    <string name="title_activity_diary_editor">Edit Diary</string>
+    <string name="title_activity_google_map_location">MapLocation</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_splash_map">Splashing</string>
+    <string name="title_activity_check_location">Checking Location</string>
+    <string name="title_activity_get_current_location">Get Current Location</string>
+    <string name="title_activity_get_location">Location</string>
+</resources>

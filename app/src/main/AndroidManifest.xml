@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="carleton.xlproject.mysecretediary">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/diary_iconx48"
+            android:label="My secret diary"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity
+                android:name=".GetLocation"
+                android:label="@string/title_activity_get_location"
+                android:parentActivityName=".MainActivity"
+                android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="carleton.xlproject.mysecretediary.MainActivity"/>
+        </activity>
+        <activity
+                android:name=".CheckLocation"
+                android:label="@string/title_activity_check_location"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".SplashMap"
+                android:label="@string/title_activity_splash_map"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".DiaryEditorActivity"
+                android:label="@string/title_activity_diary_editor"
+                android:parentActivityName=".MainActivity"
+                android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="carleton.xlproject.mysecretediary.MainActivity"/>
+        </activity>
+        <activity
+                android:name=".MainActivity"
+                android:label="@string/app_name"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".EnterPWActivity">
+        </activity>
+        <activity android:name=".CreatePWActivity">
+        </activity>
+
+        <provider
+                android:name=".DiaryTaker"
+                android:authorities="carleton.xlproject.mysecretediary.DiaryTaker"
+                android:exported="false"/>
+    </application>
+
+</manifest>
